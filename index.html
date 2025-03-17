@@ -1,83 +1,56 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ऑनलाइन पैसा कमाएं - WhatsApp के साथ</title>
+    <title>Auto Redirect</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
             text-align: center;
-            background-color: #f5f5f5;
-        }
-
-        .header {
-            color: #2c3e50;
-            font-size: 28px;
-            margin-bottom: 30px;
-        }
-
-        .highlight {
-            color: #27ae60;
-            font-size: 32px;
-            font-weight: bold;
-            margin: 25px 0;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #25D366;
+            padding: 50px;
             color: white;
-            padding: 15px 40px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-size: 20px;
-            margin: 25px 0;
-            transition: background-color 0.3s;
         }
-
-        .cta-button:hover {
-            background-color: #128C7E;
-        }
-
-        .features {
-            background-color: white;
+        .container {
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .note {
-            color: #7f8c8d;
-            font-size: 14px;
-            margin-top: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            max-width: 400px;
+            margin: auto;
+            color: black;
         }
     </style>
 </head>
 <body>
-    <h1 class="header">ऑनलाइन पैसा कमाएं</h1>
-    
-    <div class="highlight">8000 रुपये +/प्रतिदिन!</div>
-    
-    <div class="features">
-        <p>📱 फोन, कंप्यूटर या टैबलेट से कमाएं</p>
-        <p>💸 कोई निवेश जरूरी नहीं</p>
-        <p>🕒 दिन में सिर्फ 2-3 घंटे काम</p>
+
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p>Please wait while we redirect you...</p>
     </div>
 
-    <a href="https://rb.gy/q3gc32" 
-       class="cta-button"
-       target="_blank">
-       WhatsApp पर अभी शुरू करें
-    </a>
+    <script>
+        const whatsappNumbers = [
+            "9455385367", "8730013681", "8822152794", "6002759933",
+            "8476913498", "6003785115", "8986750639", "8016257445",
+            "8093594414", "8081343357", "7438089776", "9827763081",
+            "8649819293", "8695010148", "6296789991", "8293841473",
+            "9097675597", "9100282166", "9474672739", "7063475771",
+            "9193742665", "9522780845"
+        ];
 
-    <div class="note">
-        *पहले दिन से ही कमाई शुरू करें<br>
-        कोई अनुभव जरूरी नहीं
-    </div>
+        function getRandomNumber() {
+            return whatsappNumbers[Math.floor(Math.random() * whatsappNumbers.length)];
+        }
+
+        setTimeout(function() {
+            let randomNumber = getRandomNumber();
+            let message = encodeURIComponent("Can you tell me the process of this part time job which earns INR 1,000 per day?");
+            window.location.href = "https://wa.me/91" + randomNumber + "?text=" + message;
+        }, 3000); // 3 सेकंड बाद रीडायरेक्ट होगा
+
+    </script>
+
 </body>
 </html>
