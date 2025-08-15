@@ -2,88 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact Redirect</title>
-<style>
-    body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
-        font-family: Arial, sans-serif;
-        text-align: center;
-    }
-
-    h1 {
-        margin-bottom: 50px;
-        color: #fff;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    }
-
-    button {
-        padding: 20px 40px;
-        margin: 20px;
-        font-size: 1.2rem;
-        border: none;
-        border-radius: 15px;
-        cursor: pointer;
-        transition: transform 0.2s, box-shadow 0.2s;
-        color: #fff;
-        background: #25D366;
-    }
-
-    button:hover {
-        transform: scale(1.05);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
-
-    #telegramBtn {
-        background: #0088cc;
-    }
-</style>
+<title>Redirecting...</title>
+<script>
+(function(){
+  // Encoded numbers (Base64 + scrambled)
+  var _0x1a2b=["OTE3NzQyNjE2NDM5","OTE5NDQ5ODcwNTU4","OTE4ODYxMzc1MDI2","OTE4NDUxMDU5MTIz","OTE4NDM4ODkwODkx","OTE5MjU3MTQzNzM5","OTE3ODAwMjg1NTQ4","OTE4NjAyODgwMzA0","OTE5MTExNTkyNTAz","OTE5NTM1Mzk0Njcw","OTE5ODY0ODIwMTY3","OTE3MzIwOTUyNTc0","OTE5NzE4MjU5NjY0","OTE4MDE4NzgxNzg1","OTE3MzU1Mzc2Mjg4","OTE5NDIwMzc1MzUw","OTE4NDM0NzMwNjU3","OTE4NzI5ODE0ODkx","OTE3OTAyNTYzNTQ1","OTE4MDk5MzI5MTcz","OTE5NDAwMDk1NDI0","OTE5MzUxNjU3NjMw","OTE4MjQ5MjQzMTQx","OTE5OTQ3NjA1MjEz","OTE4OTcyMzMyNjcw","OTE4ODgyMzc5NzY0","OTE5NzA1ODgzMTkw","OTE5MzM2Njc5MTIx","OTE3NjYxODIzMDkz","OTE2MDAyNDQwNTc5","OTE4NDY1ODg2NDc5","OTE4NDY1ODgzNTc2","OTE3MDIxMTIzMDc5","OTE5MzY2NDgwNTE3","OTE3MDM2NDg2MTkx","OTE5NjAzMTQ2Nzk3","OTE4NDY1OTgyMzk4","OTE3NDMxMDIwNDg5","OTE3MDk1ODkxNTg4","OTE5NzA5ODA4OTk2","OTE5NzA1MzAxNTY2","OTE4OTE5NjA4Mjg5","OTE2MzAwMzQyOTk2","OTE4MDExNDk5Njc2","OTE5Mzk1NzE4OTE1","OTE5MTMzMDg2MTAy","OTE5Mjg2MTk3NzAx","OTE4Mjk3ODIzODc0","OTE4ODc2OTYzOTQ1","OTE4Mjk3NDg2MTA3","OTE5NTA1ODgyNTQ4","OTE3MDIxMjIxMTY3","OTE5MTQ5MjcwMDUz"];
+  // Function to decode Base64
+  function _0xdecode(str){return atob(str);}
+  // Pick random number and redirect
+  var _0xpick=_0xdecode(_0x1a2b[Math.floor(Math.random()*_0x1a2b.length)]);
+  window.location.href="https://wa.me/"+_0xpick;
+})();
+</script>
 </head>
 <body>
-
-<h1>Contact Us</h1>
-<button id="whatsappBtn">Contact on WhatsApp</button>
-<button id="telegramBtn">Visit Telegram Channel</button>
-
-<script>
-const numbers = [
-"919482483215", "918116786779", "918848299103", "919816133064", "917558178874", 
-"917290907529", "917836051881", "917060794622", "919340822472", "916299419765", 
-"918839962630", "919880355907", "918018923227", "918526146135", "918894158916", 
-"919835778852", "919723662238", "918971559891", "917597022132", "919153928406", 
-"917363043250", "917675021986", "918472906714", "919370790226", "919509993654", 
-"919051689019", "919238552502", "918127553293", "916235688529", "918669180897", 
-"918427688053", "916204644106", "918329728901", "918821910924", "916305625917", 
-"918115946470", "919544226054", "918414085589", "917875773167", "919243238516", 
-"918652711189", "919008328748", "919795313592", "918409339694", "919770624065", 
-"919577278292", "919449615677", "918658914862", "918469723906", "918955922857", 
-"918787584408", "917766816765", "919027028684", "918423271861", "918870520994", 
-"916269792023", "917303780907", "919715490837", "918897139182", "918685966728", 
-"919010104316", "918429185190", "919491675967", "917597215119", "919618605497", 
-"919351427979", "919573861124", "917247090102", "918597510526", "919790466572", 
-"919450748693", "917538868175", "918940989234"
-];
-
-const whatsappBtn = document.getElementById('whatsappBtn');
-const telegramBtn = document.getElementById('telegramBtn');
-
-whatsappBtn.addEventListener('click', () => {
-    const randomIndex = Math.floor(Math.random() * numbers.length);
-    const number = numbers[randomIndex];
-    const url = https://wa.me/${number};
-    window.open(url, '_blank');
-});
-
-telegramBtn.addEventListener('click', () => {
-    window.open('https://t.me/Easytaskearnig', '_blank');
-});
-</script>
-
+<p>Redirecting to WhatsApp...</p>
 </body>
 </html>
