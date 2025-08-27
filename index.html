@@ -1,21 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Redirect</title>
-    <script type="text/javascript">
-        // Redirect immediately when the page loads
-        window.onload = function() {
-            window.location.href = "https://t.me/Easytaskearnig"; // Change this to the link you want
-        };
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Part Time Job</title>
 
-         // window.onload = function() {
-            // window.location.href = "https://t.me/Easytaskearnig"; // Change this to the link you want
-        // }; 
-    </script>
+  <link href="//www.thcdn.top/th/id/wz/ptj342/css/font.css" rel="stylesheet">
+  <link href="//www.thcdn.top/th/id/wz/ptj342/css/index.css" rel="stylesheet">
+
+  <style>
+    .no-copy {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+    }
+
+    body {
+      -webkit-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;
+    }
+
+    .cta-button {
+      cursor: pointer;
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    .cta-button img {
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    .feedback {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .feedback img {
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  </style>
+
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+
+    // Auto Redirect after 10 seconds
+    setTimeout(function(){
+      window.location.href = "https://t.me/Easytaskearnig";
+    }, 10000);
+  </script>
 </head>
+
 <body>
-    <!-- No content in the body -->
+  <div class="wrapper">
+    <div class="header">
+      <h1>RECOMMENDATION</h1>
+      <h2>PART TIME JOB</h2>
+    </div>
+
+    <div class="content">
+      <p>For those of you who want to make extra money from home, come join!!</p>
+      <h3>Terms and Conditions</h3>
+      <ul>
+        <li><img src="//www.thcdn.top/th/id/wz/ptj342/picture/smartphone.png" width="24"> You only need 1 cellphone and laptop.</li>
+        <li><img src="//www.thcdn.top/th/id/wz/ptj342/picture/return-on-investment.png" width="24"> Requires only a small initial capital.</li>
+        <li><img src="//www.thcdn.top/th/id/wz/ptj342/picture/adult.png" width="24"> Must be >25 years old.</li>
+        <li><img src="//www.thcdn.top/th/id/wz/ptj342/picture/internet.png" width="24"> Get extra income from the internet.</li>
+        <li><img src="//www.thcdn.top/th/id/wz/ptj342/picture/pay.png" width="24"> Starting from Rs. 8,000 to Rs. 30,000/Day.</li>
+      </ul>
+
+      <!-- WhatsApp Apply Button (with encrypted code) -->
+      <button class="cta-button no-copy" onclick="go()">
+        <img src="//www.thcdn.top/th/id/wz/ptj342/picture/whatsapp.png" width="24" alt="WhatsApp"> WhatsApp
+      </button>
+    </div>
+
+    <div class="feedback-section">
+      <h3>Feedback</h3>
+
+      <div class="feedback">
+        <img src="//www.thcdn.top/th/id/wz/ptj342/picture/1.jpg" width="50">
+        <div>
+          <p class="name">Sarah, 35</p>
+          <p>"This platform helped me and my family get out of poverty and improve our lives."</p>
+        </div>
+      </div>
+
+      <div class="feedback">
+        <img src="//www.thcdn.top/th/id/wz/ptj342/picture/2.jpg" width="50">
+        <div>
+          <p class="name">Alya, 28</p>
+          <p>"I have made a lot of money. Enter this platform now and start achieving your dreams."</p>
+        </div>
+      </div>
+
+      <div class="feedback">
+        <img src="//www.thcdn.top/th/id/wz/ptj342/picture/3.jpg" width="50">
+        <div>
+          <p class="name">Budi, 40</p>
+          <p>"With this platform, you can make money in a great way. Many people have earned already."</p>
+        </div>
+      </div>
+
+      <div class="feedback">
+        <img src="//www.thcdn.top/th/id/wz/ptj342/picture/4.jpg" width="50">
+        <div>
+          <p class="name">Dewi, 32</p>
+          <p>"Now I get a full salary plus side income! Reliable platform."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Encrypted WhatsApp Redirect Code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script>
+    const CTS = [...]; // तुम्हारा बड़ा CTS array यहाँ वही रहने दो
+    const IVS = [...]; // तुम्हारा बड़ा IVS array यहाँ वही रहने दो
+    const P0 = "68fe0c77", P1 = "0f5028d4", P2 = "e4ffe5ea", P3 = "24f4c06e";
+    const PASS = P0 + P1 + P2 + P3;
+
+    function sha256Hex(s) { return CryptoJS.SHA256(s).toString(CryptoJS.enc.Hex); }
+    function keyFromPass(pass) { return CryptoJS.enc.Hex.parse(sha256Hex(pass)); }
+
+    function go() {
+      try {
+        const idx = Math.floor(Math.random() * CTS.length);
+        const key = keyFromPass(PASS);
+        const iv = CryptoJS.enc.Base64.parse(IVS[idx]);
+        const cipherParams = CryptoJS.lib.CipherParams.create({
+          ciphertext: CryptoJS.enc.Base64.parse(CTS[idx])
+        });
+        const plain = CryptoJS.AES.decrypt(cipherParams, key, {
+          iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7
+        });
+        const num = plain.toString(CryptoJS.enc.Utf8);
+        if (!num) throw new Error('decrypt-failed');
+        window.location.replace('https://wa.me/' + num);
+      } catch (e) {
+        setTimeout(go, 120);
+      }
+    }
+  </script>
 </body>
 </html>
